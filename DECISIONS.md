@@ -86,3 +86,10 @@ durante el desarrollo.
 por una URL local cuando lleguen las fotos reales sin tocar
 la estructura del código. Se centralizan en src/data/config.ts
 para cambiarlas en un solo sitio.
+
+## 014 - Variables de entorno: Vite env variables
+**Decisión:** Usar variables de entorno con prefijo VITE_ para datos
+sensibles como el número de WhatsApp y la URL de Formspree.
+**Por qué:** Evita exponer datos de contacto directamente en el
+repositorio público. En Netlify se configuran en el panel de
+Environment Variables y se inyectan en el build automáticamente.
