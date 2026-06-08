@@ -78,3 +78,11 @@ moneda, redes sociales) en src/data/config.ts.
 **Por qué:** Cuando la clienta proporcione los datos reales, se cambia
 un solo archivo y se propaga a toda la app. Evita buscar placeholders
 dispersos por múltiples componentes.
+
+## 012 - Imágenes: placeholders de Unsplash
+**Decisión:** Usar URLs de imágenes de Unsplash como placeholders
+durante el desarrollo.
+**Por qué:** Son gratuitas, de alta calidad y se pueden sustituir
+por una URL local cuando lleguen las fotos reales sin tocar
+la estructura del código. Se centralizan en src/data/config.ts
+para cambiarlas en un solo sitio.
