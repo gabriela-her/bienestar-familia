@@ -63,7 +63,7 @@ npm run preview
 - [x] Configuración centralizada en siteConfig
 - [x] Página Home
 - [x] Página Servicios
-- [ ] Página Equipo
+- [x] Página Equipo
 - [ ] Página Contacto
 - [ ] Despliegue en Netlify
 - [ ] Blog

@@ -111,5 +111,30 @@ export const siteConfig = {
             price: 20,
         },
     ],
-
+    team: [
+        {
+            id: 'terapeuta-1',
+            name: 'Dra. Nombre Apellido',
+            role: 'Psicóloga Clínica',
+            specialties: ['Ansiedad y estrés', 'Terapia cognitivo-conductual', 'Adultos'],
+            bio: 'Psicóloga clínica con más de 10 años de experiencia acompañando procesos de cambio en adultos. Especializada en trastornos de ansiedad y gestión emocional.',
+            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+        },
+        {
+            id: 'terapeuta-2',
+            name: 'Lic. Nombre Apellido',
+            role: 'Psicólogo Infantil',
+            specialties: ['Psicología infantil', 'Adolescentes', 'Orientación familiar'],
+            bio: 'Especialista en psicología infantil y adolescente con enfoque lúdico y sistémico. Amplia experiencia en orientación a familias y escuelas.',
+            image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+        },
+        {
+            id: 'terapeuta-3',
+            name: 'Lic. Nombre Apellido',
+            role: 'Terapeuta de Pareja y Familia',
+            specialties: ['Terapia de pareja', 'Terapia familiar', 'Mediación'],
+            bio: 'Terapeuta sistémica especializada en dinámicas de pareja y familia. Formada en mediación y resolución de conflictos relacionales.',
+            image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80',
+        },
+    ],
 }
