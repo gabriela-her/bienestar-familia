@@ -61,7 +61,7 @@ npm run preview
 - [x] Botón flotante de WhatsApp
 - [x] Variables CSS con paleta pastel
 - [x] Configuración centralizada en siteConfig
-- [ ] Página Home
+- [x] Página Home
 - [ ] Página Servicios
 - [ ] Página Equipo
 - [ ] Página Contacto
