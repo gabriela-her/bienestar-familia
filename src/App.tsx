@@ -1,13 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
 import Servicios from './pages/Servicios/Servicios'
 import Equipo from './pages/Equipo/Equipo'
 import Contacto from './pages/Contacto/Contacto'
 import NotFound from './pages/NotFound/NotFound'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicios" element={<Servicios />} />
@@ -15,6 +19,8 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+        <Footer />
+        <WhatsAppButton />
     </BrowserRouter>
   )
 }

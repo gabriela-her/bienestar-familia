@@ -28,3 +28,68 @@ fluida. Usamos BrowserRouter (URLs reales como /equipo) en lugar de HashRouter
 valoradas por los motores de búsqueda.
 **Nota pendiente:** Configurar _redirects en Netlify para evitar 404 en
 acceso directo a rutas.
+
+## 005 - Flujo de trabajo: Git Flow
+**Decisión:** Usar tres niveles de ramas: main, develop y feature branches.
+**Por qué:** main siempre refleja lo que está en producción y nunca
+se toca directamente. develop es la rama de integración. Cada feature
+nueva tiene su propia rama que sale de develop y vuelve a develop
+cuando está lista. Esto permite trabajar en paralelo sin romper
+lo que ya funciona.
+
+## 006 - Estilos: CSS Custom Properties (variables CSS)
+**Decisión:** Centralizar todos los valores de diseño en variables CSS
+definidas en src/styles/variables.css.
+**Por qué:** Permite cambiar colores, fuentes o espaciados en un solo
+lugar y que el cambio se propague a toda la app. Es la alternativa
+nativa del navegador a variables de Sass o tokens de diseño de librerías
+como Tailwind. No añade dependencias externas y cualquier desarrollador
+que conozca CSS lo entiende sin aprender nada nuevo.
+
+## 007 - Identidad visual: paleta pastel
+**Decisión:** Paleta de colores suaves (azules, verdes y rosas pasteles
+sobre fondo blanco roto).
+**Por qué:** El centro atiende a todo tipo de público incluyendo niños
+y parejas. Los colores pasteles transmiten calma, confianza y accesibilidad
+emocional, valores alineados con el objetivo del centro.
+
+## 008 - Contacto: botón flotante de WhatsApp
+**Decisión:** Botón flotante siempre visible que abre WhatsApp directamente.
+**Por qué:** Es el método de contacto preferido por la clienta y el más
+usado en España para contacto rápido. No requiere backend, es un enlace
+estático con el formato wa.me/+34XXXXXXXXX.
+
+## 009 - Reservas: Calendly en primera versión
+**Decisión:** Integrar Calendly mediante iframe o enlace externo.
+**Por qué:** Construir un sistema de reservas propio requiere backend,
+base de datos y autenticación. Calendly resuelve esto de forma gratuita
+y profesional en una fracción del tiempo. Si en el futuro se necesita
+más control, se puede migrar a una solución propia.
+
+## 010 - Pagos: PayPal SDK en primera versión
+**Decisión:** Integrar PayPal mediante su SDK de JavaScript.
+**Por qué:** Es la opción más simple que no requiere backend propio
+para una primera versión. Si el volumen de pagos crece o se necesitan
+funcionalidades avanzadas, se puede migrar a Stripe con un backend propio.
+
+## 011 - Datos del centro: siteConfig
+**Decisión:** Centralizar todos los datos del centro (nombre, contacto,
+moneda, redes sociales) en src/data/config.ts.
+**Por qué:** Cuando la clienta proporcione los datos reales, se cambia
+un solo archivo y se propaga a toda la app. Evita buscar placeholders
+dispersos por múltiples componentes.
+
+## 012 - Imágenes: placeholders de Unsplash
+**Decisión:** Usar URLs de imágenes de Unsplash como placeholders
+durante el desarrollo.
+**Por qué:** Son gratuitas, de alta calidad y se pueden sustituir
+por una URL local cuando lleguen las fotos reales sin tocar
+la estructura del código. Se centralizan en src/data/config.ts
+para cambiarlas en un solo sitio.
+
+## 014 - Variables de entorno: Vite env variables
+**Decisión:** Usar variables de entorno con prefijo VITE_ para datos
+sensibles como el número de WhatsApp y la URL de Formspree.
+**Por qué:** Evita exponer datos de contacto directamente en el
+repositorio público. En Netlify se configuran en el panel de
+Environment Variables y se inyectan en el build automáticamente.
