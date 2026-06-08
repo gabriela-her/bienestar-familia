@@ -6,6 +6,7 @@ import Servicios from './pages/Servicios/Servicios'
 import Equipo from './pages/Equipo/Equipo'
 import Contacto from './pages/Contacto/Contacto'
 import NotFound from './pages/NotFound/NotFound'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
         <Footer />
+        <WhatsAppButton />
     </BrowserRouter>
   )
 }
