@@ -3,6 +3,7 @@ import './Home.css'
 import About from './components/About/About'
 import ServicesPreview from './components/ServicesPreview/ServicesPreview'
 import Modalities from './components/Modalities/Modalities'
+import HomeCTA from './components/HomeCTA/HomeCTA'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <About />
       <ServicesPreview />
       <Modalities />
+      <HomeCTA />
     </main>
   )
 }
