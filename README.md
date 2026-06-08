@@ -62,7 +62,7 @@ npm run preview
 - [x] Variables CSS con paleta pastel
 - [x] Configuración centralizada en siteConfig
 - [x] Página Home
-- [ ] Página Servicios
+- [x] Página Servicios
 - [ ] Página Equipo
 - [ ] Página Contacto
 - [ ] Despliegue en Netlify
