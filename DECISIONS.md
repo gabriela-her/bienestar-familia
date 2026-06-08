@@ -71,3 +71,10 @@ más control, se puede migrar a una solución propia.
 **Por qué:** Es la opción más simple que no requiere backend propio
 para una primera versión. Si el volumen de pagos crece o se necesitan
 funcionalidades avanzadas, se puede migrar a Stripe con un backend propio.
+
+## 011 - Datos del centro: siteConfig
+**Decisión:** Centralizar todos los datos del centro (nombre, contacto,
+moneda, redes sociales) en src/data/config.ts.
+**Por qué:** Cuando la clienta proporcione los datos reales, se cambia
+un solo archivo y se propaga a toda la app. Evita buscar placeholders
+dispersos por múltiples componentes.
