@@ -36,4 +36,37 @@ images: {
       { icon: '💙', label: 'Para todos', description: 'Individuos, parejas, familias y niños son bienvenidos.' },
     ],
   },
+
+  services: [
+    {
+      id: 'psicologia-individual',      
+      title: 'Psicología Individual',
+      description: 'Acompañamiento personalizado para adultos que buscan herramientas para gestionar sus emociones y superar dificultades.',
+      price: 30,
+    },
+    {
+      id: 'terapia-parejas',
+      title: 'Terapia de Parejas',
+      description: 'Espacio de diálogo y reflexión para parejas que desean mejorar su comunicación y fortalecer su vínculo.',
+      price: 40,
+    },
+    {
+      id: 'psicologia-infantil',
+      title: 'Psicología Infantil',
+      description: 'Atención especializada para niños y adolescentes, con enfoque lúdico y adaptado a cada etapa del desarrollo.',
+      price: 30,
+    },
+    {
+      id: 'terapia-familiar',
+      title: 'Terapia Familiar',
+      description: 'Intervención sistémica para familias que atraviesan conflictos o cambios y buscan mejorar su dinámica.',
+      price: 45,
+    },
+    {
+      id: 'talleres',
+      title: 'Talleres Grupales',
+      description: 'Sesiones grupales en un espacio amplio y acogedor, diseñadas para el crecimiento personal y el bienestar colectivo.',
+      price: 20,
+    },
+  ],
 }
