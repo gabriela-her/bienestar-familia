@@ -19,7 +19,20 @@ export const siteConfig = {
   facebook: 'https://facebook.com/bienestaryfamilia',
 
   // Modalidad
-  modalities: ['Presencial', 'Online'],
+ modalities: [
+    {
+      id: 'presencial',
+      title: 'Atención Presencial',
+      description: 'Visítanos en nuestro espacio diseñado para que te sientas cómodo y seguro. Contamos con consultorios privados, sala de talleres grupales y un ambiente cálido y acogedor.',
+      details: ['Consultorios privados', 'Sala de talleres grupales', 'Ambiente acogedor'],
+    },
+    {
+      id: 'online',
+      title: 'Atención Online',
+      description: 'Recibe atención psicológica profesional desde la comodidad de tu hogar. Realizamos sesiones por videollamada con la misma calidad y confidencialidad que la atención presencial.',
+      details: ['Desde cualquier lugar', 'Misma calidad terapéutica', 'Plataforma segura'],
+    },
+  ],
 
 images: {
     hero: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
@@ -69,4 +82,5 @@ images: {
       price: 20,
     },
   ],
+  
 }
