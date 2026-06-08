@@ -10,6 +10,15 @@ export const siteConfig = {
     email: 'contacto@bienestaryfamilia.com',
     address: 'Dirección del centro, Ciudad, Venezuela',
 
+    contact: {
+    formspreeUrl: 'https://formspree.io/f/XXXXXXXX',
+    schedule: [
+      { days: 'Lunes a Viernes', hours: '8:00 am - 6:00 pm' },
+      { days: 'Sábados', hours: '9:00 am - 1:00 pm' },
+      { days: 'Domingos', hours: 'Cerrado' },
+    ],
+  },
+
     // Moneda
     currency: 'USD',
     currencySymbol: '$',
