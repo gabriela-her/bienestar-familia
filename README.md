@@ -64,7 +64,7 @@ npm run preview
 - [x] Página Home
 - [x] Página Servicios
 - [x] Página Equipo
-- [ ] Página Contacto
+- [x] Página Contacto
 - [ ] Despliegue en Netlify
 - [ ] Blog
 - [ ] Testimonios
