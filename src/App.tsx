@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
 import Servicios from './pages/Servicios/Servicios'
 import Equipo from './pages/Equipo/Equipo'
@@ -8,6 +9,7 @@ import NotFound from './pages/NotFound/NotFound'
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicios" element={<Servicios />} />

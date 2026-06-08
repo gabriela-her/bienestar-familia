@@ -28,3 +28,11 @@ fluida. Usamos BrowserRouter (URLs reales como /equipo) en lugar de HashRouter
 valoradas por los motores de búsqueda.
 **Nota pendiente:** Configurar _redirects en Netlify para evitar 404 en
 acceso directo a rutas.
+
+## 005 - Flujo de trabajo: Git Flow
+**Decisión:** Usar tres niveles de ramas: main, develop y feature branches.
+**Por qué:** main siempre refleja lo que está en producción y nunca
+se toca directamente. develop es la rama de integración. Cada feature
+nueva tiene su propia rama que sale de develop y vuelve a develop
+cuando está lista. Esto permite trabajar en paralelo sin romper
+lo que ya funciona.
