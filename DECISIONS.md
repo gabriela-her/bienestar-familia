@@ -86,3 +86,10 @@ durante el desarrollo.
 por una URL local cuando lleguen las fotos reales sin tocar
 la estructura del código. Se centralizan en src/data/config.ts
 para cambiarlas en un solo sitio.
+
+## 013 - Formulario de contacto: Formspree
+**Decisión:** Usar Formspree para gestionar el envío del formulario.
+**Por qué:** Un sitio estático no tiene servidor propio para procesar
+emails. Formspree recibe los datos del formulario y los reenvía al
+email de la clienta sin necesidad de backend. Es gratuito hasta
+50 envíos al mes y se integra con un solo atributo action en el form.
