@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# Bienestar y Familia 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web institucional para un centro de salud mental ubicado en Venezuela, desarrollada con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Dar a conocer el espacio, el equipo y los servicios del centro, con proyección a incorporar blog, testimonios de pacientes y pasarela de pagos.
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript 6
+- Vite
+- React Router DOM
 
-## Expanding the ESLint configuration
+## Estructura del proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/      # Componentes reutilizables (Header, Footer, WhatsAppButton)
+├── pages/           # Páginas de la app (Home, Servicios, Equipo, Contacto)
+├── data/            # Contenido estático y configuración del centro
+├── styles/          # Variables CSS globales
+└── assets/          # Imágenes y recursos
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Decisiones técnicas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Las decisiones de arquitectura están documentadas en [DECISIONS.md](./DECISIONS.md).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Flujo de trabajo
+
+feat/* → develop → main
+
+- `main` → producción
+- `develop` → integración
+- `feat/*` → desarrollo de cada funcionalidad
+
+## Comandos
+
+```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
+npm run dev
+
+# Build de producción
+npm run build
+
+# Preview del build
+npm run preview
 ```
+
+## Estado actual
+
+- [x] Estructura base del proyecto
+- [x] Sistema de rutas con React Router
+- [x] Header con navegación activa
+- [x] Footer con datos del centro
+- [x] Botón flotante de WhatsApp
+- [x] Variables CSS con paleta pastel
+- [x] Configuración centralizada en siteConfig
+- [ ] Página Home
+- [ ] Página Servicios
+- [ ] Página Equipo
+- [ ] Página Contacto
+- [ ] Despliegue en Netlify
+- [ ] Blog
+- [ ] Testimonios
+- [ ] Pasarela de pagos
